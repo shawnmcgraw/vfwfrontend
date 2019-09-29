@@ -1,0 +1,26 @@
+{
+  "name": "vfwfrontend",
+  "version": "1.0.0",
+  "description": "Front end for VFW Post 1062. https://vfwpost1062.org/",
+  "main": "main.js",
+  "scripts": {
+    "server":"live-server"
+  },
+  "keywords": [
+    "vfw",
+    "cuyahoga",
+    "falls",
+    "post",
+    "1062"
+  ],
+  "author": "Shawn McGraw",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
