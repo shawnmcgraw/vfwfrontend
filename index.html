@@ -8,6 +8,9 @@
   <!-- Bootstrap-->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
+  <!-- Additional sytles -->
+  <link rel="stylesheet" href="src/styles/style.css">
+
   <title>VFW Post 1062 | Cuyahoga Falls, OH</title>
 </head>
 <body style="padding-top:87px;">
@@ -33,22 +36,39 @@
   </nav>
 
     
-    <!-- Carousel -->
-  <div id="mainCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Carousel -->
+  <div id="carousel-container" class="contianer p-2 bg-dark">
+    <div id="mainCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
-          <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#mainCarousel" data-slide-to="1"></li>
-          <li data-target="#mainCarousel" data-slide-to="2"></li>
+        <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#mainCarousel" data-slide-to="1"></li>
+        <li data-target="#mainCarousel" data-slide-to="2"></li>
       </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="src/assets/images/military-jet-fighter-569907_1920.jpg" class="d-block w-100" alt="Flighdeck washdown aboard USS Harry S. Truman (CVN-75)">
-      </div>
-      <div class="carousel-item">
-        <img src="src/assets/images/tablesetting.jpeg" class="d-block w-100" alt="'Gas, Gas, Gas'. US Army chemical warfare training.">
-      </div>
-      <div class="carousel-item">
-        <img src="src/assets/images/acu-helmet.jpg" class="d-block w-100" alt="Some jarhead with facepaint.">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- crop images to 1300x600 -->
+          <img src="src/assets/images/hstflighdeckwashdown-cropped1.jpg" class="d-block w-100 img-fluid" alt="">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Join Us!</h5>
+            <p>No one does more for veterans.</p>
+            <button type="button" class="btn btn-secondary">Join</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="src/assets/images/us-army-aricraft-crop1.jpg" class="d-block w-100 img-fluid" alt="">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Help Us Keep the Doors Open</h5>
+            <p>We are currently need to re-pave our parking lot, and could use your help.</p>
+            <button type="button" class="btn btn-primary">Donate</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="src/assets/images/USFlag-cropped1.jpeg" class="d-block w-100 img-fluid" alt="">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Contact Us</h5>
+            <p>Need help with, or just want more information? Click below.</p>
+            <button type="button" class="btn btn-secondary">Contact Us</button>
+          </div>
         </div>
       </div>
       <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
@@ -60,7 +80,49 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+  </div>
 
+  <main class="bg-dark">
+    <section class="container bg-dark">
+      <div class="row bg-dark">
+        <div class="col-lg-4 card">
+          <!-- <img src="" alt="" class="card-img-top"> -->
+          <div class="card-img-top bg-secondary placeholder-div"></div> <!-- replace div with img -->
+          <div class="card-body">
+            <h5>Card 1</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn btn-secondary">CTA 1</a>
+          </div>
+        </div>
+        <div class="col-lg-4 card">
+          <!-- <img src="" alt="" class="card-img-top"> -->
+          <div class="card-img-top bg-secondary placeholder-div"></div>
+          <div class="card-body">
+            <h5>Card 2</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn btn-secondary">CTA 2</a>
+          </div>
+        </div>
+        <div class="col-lg-4 card">
+          <!-- <img src="" alt="" class="card-img-top"> -->
+          <div class="card-img-top bg-secondary placeholder-div"></div>
+          <div class="card-body">
+            <h5>Card 3</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn btn-secondary">CTA 3</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section>
+      
+    </section>
+  </main>
+
+ 
      
   <!-- Required JS -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
