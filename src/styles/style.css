@@ -10,3 +10,8 @@
 .img-fit-cover {
   object-fit: cover;
 }
+
+.op-dark {
+  opacity: 0.5;
+  background-color: #6c757d;
+}
